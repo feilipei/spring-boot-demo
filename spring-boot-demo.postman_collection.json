@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "f134f0df-4a78-474e-8fd5-314abf6f428e",
+		"name": "spring-boot-demo",
+		"description": "spring-boot-demo测试接口脚本",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "spring-boot-demo-helloworld",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{demo-server}}/demo/hello?who=你好",
+					"host": [
+						"{{demo-server}}"
+					],
+					"path": [
+						"demo",
+						"hello"
+					],
+					"query": [
+						{
+							"key": "who",
+							"value": "你好"
+						}
+					]
+				},
+				"description": "spring-boot 的一个 helloworld"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
